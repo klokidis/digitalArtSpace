@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">digital art space</string>
+    <string name="photo_one">Street of Kavala</string>
+    <string name="photo_two">Greece waters</string>
+    <string name="photo_three">Snow in Germany</string>
 </resources>
