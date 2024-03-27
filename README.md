@@ -12,6 +12,11 @@ Digital Photo Showcase allows you to browse through a curated selection of photo
 - **View Details**: Get information about each photo, including its location and photographer.
 - **Navigate**: Easily move between photos with navigation buttons.
 
+## Screenshots
+
+<img src="https://github.com/klokidis/digitalArtSpace/assets/132920931/86dfa50d-823a-4a35-8b21-539a478b26ba" width="250" alt="Screenshot2"> <img src="https://github.com/klokidis/digitalArtSpace/assets/132920931/2652137d-d1a4-4dc6-8eb8-14c0be47022d" width="250" alt="Screenshot">
+
+
 ### Installation
 
 To run Digital Photo Showcase on your device, follow these steps:
