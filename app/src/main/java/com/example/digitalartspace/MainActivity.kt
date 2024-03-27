@@ -26,6 +26,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -59,8 +60,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun App(modifier: Modifier = Modifier) {
-    var image by remember { mutableIntStateOf(0) }
-    var location by remember { mutableIntStateOf(R.string.photo_one) }
+    var image by rememberSaveable { mutableIntStateOf(0) }
+    var location by rememberSaveable { mutableIntStateOf(R.string.photo_one) }
 
     Column(
         modifier = Modifier
@@ -71,7 +72,7 @@ fun App(modifier: Modifier = Modifier) {
     ){
         Spacer(modifier = Modifier.height(10.dp))
         Picture(painterResource(findPic(image)))
-        Spacer(modifier = Modifier.height(50.dp))
+        Spacer(modifier = Modifier.height(30.dp))
         Details(location,"klok")
         Spacer(modifier = Modifier.height(50.dp))
         FactionalButtons(
@@ -117,12 +118,12 @@ fun Picture(
 ) {
     Box(
         modifier = Modifier
-            .fillMaxWidth()
+            .fillMaxWidth(0.9f)
             .padding(top = 30.dp, start = 10.dp, end = 10.dp),
     ) {
         Surface(
             modifier = Modifier
-                .padding(start = 30.dp, end = 30.dp)
+                .padding(start = 25.dp, end = 25.dp)
                 .align(Alignment.Center)
                 .shadow(4.dp, shape = RoundedCornerShape(16.dp)),
             shape = RoundedCornerShape(16.dp),
